@@ -19,7 +19,7 @@ public class login extends javax.swing.JFrame {
      */
     public login() {
         initComponents();
-        setIconImage();
+      //  setIconImage();
     }
 
     /**
@@ -92,10 +92,8 @@ public class login extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new login().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new login().setVisible(true);
         });
     }
 
@@ -108,7 +106,7 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 
-    private void setIconImage() {
-        setIconImage(new ImageIcon(getClass().getResource("/assets/market.png")).getImage());
-    }
+   // private void setIconImage() {
+  //      setIconImage(new ImageIcon(getClass().getResource("/assets/market.png")).getImage());
+   // }
 }
