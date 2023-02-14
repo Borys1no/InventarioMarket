@@ -11,6 +11,6 @@ package com.mycompany.inventariomarket;
 public class InventarioMarket {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
     }
 }
