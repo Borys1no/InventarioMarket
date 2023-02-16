@@ -3,6 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package vista;
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 
 /**
  *
@@ -15,6 +18,7 @@ public class log_in extends javax.swing.JFrame {
      */
     public log_in() {
         initComponents();
+        setIconImage();
     }
 
     /**
@@ -35,6 +39,8 @@ public class log_in extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jPasswordField1 = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -55,16 +61,30 @@ public class log_in extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel4.setText("Usuario");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, -1, -1));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 162, 350, 60));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, -1, 20));
+
+        jTextField1.setBorder(null);
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 350, 40));
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel5.setText("Contrasena");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, -1, -1));
-        jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, 350, 70));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, -1, -1));
+
+        jPasswordField1.setBorder(null);
+        jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, 350, 40));
 
         jButton1.setText("Iniciar Sesion");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 370, 250, 30));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 250, 30));
+
+        jSeparator1.setBackground(new java.awt.Color(0, 102, 255));
+        jSeparator1.setForeground(new java.awt.Color(102, 153, 255));
+        jSeparator1.setEnabled(false);
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, 350, 20));
+
+        jSeparator2.setBackground(new java.awt.Color(0, 102, 255));
+        jSeparator2.setForeground(new java.awt.Color(102, 153, 255));
+        jSeparator2.setEnabled(false);
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, 350, 20));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 561, 459));
 
@@ -115,6 +135,12 @@ public class log_in extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
+
+private void setIconImage() {
+        setIconImage(new ImageIcon(getClass().getResource("/assets/market.png")).getImage());
+    }
 }
